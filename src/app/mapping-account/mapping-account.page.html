@@ -1,0 +1,653 @@
+ 
+<ion-content [fullscreen]="true">
+  <div class="page-centered-element">
+    <div class="header">
+      <ion-icon (click)="back()" name="arrow-back" style="font-size: 2.0rem;"></ion-icon>
+      <div class="lbl">
+        <ion-label style="font-size: 20px;">MAPPING ADDED ACCOUNTS</ion-label>
+      </div>
+    </div>
+    <div id="section">
+      <ion-segment [(ngModel)]="tab">
+        <ion-segment-button value="assets">
+          <ion-label>Assets</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="lia">
+          <ion-label>Liabilities</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="insurance">
+          <ion-label style="width: 100%;white-space: break-spaces;">Insurance >Life Insurance</ion-label>
+        </ion-segment-button>
+      </ion-segment>
+    </div>
+    <div id="container">
+      <div class="content" [ngSwitch]="tab">
+        <ion-list *ngSwitchCase="'assets'" lines="none">
+          <ion-label>Assets</ion-label>
+          <ion-col>
+            <div class="item-content">
+              <ion-label class="tlt">Bank Accounts - Transaction (total:0)</ion-label>
+              <div class="card-content">
+                <ion-label>No Data</ion-label>
+              </div>
+            </div>
+          </ion-col>
+          <ion-col>
+            <div class="item-content">
+              <ion-label class="tlt">Bank Accounts - Saving (total:1)</ion-label>
+              <div class="card-content">
+                <!-- <ion-label>No Data</ion-label> -->
+                <ion-card>
+                  <ion-card-content>
+                    <ion-row>
+                      <ion-col>
+                          <div style="color: #0a86f0;">CHECKING</div>
+                          <div>xxxx6325</div>
+                      </ion-col>
+                      <ion-col>
+                          <div>FUNDS</div>
+                          <div style="color: #0a86f0;">$428,874.45</div>
+                      </ion-col>
+                      <ion-col class="i-col">
+                        <div class='icon-cont' (click)="accountDetails()"><ion-icon name="alert"></ion-icon></div>
+                      </ion-col>
+                    </ion-row>
+                    <div class="n-cont">
+                      <ion-label>ANZ</ion-label>
+                    </div>
+                  </ion-card-content>
+                </ion-card>
+              </div>
+            </div>
+          </ion-col>
+          <ion-col>
+            <div class="item-content">
+              <ion-label class="tlt">Term Deposits(total:0)</ion-label>
+              <div class="card-content">
+                <ion-label>No Data</ion-label>
+              </div>
+            </div>
+          </ion-col>
+          <ion-col>
+            <div class="item-content">
+              <ion-label class="tlt">Shares(total:0)</ion-label>
+              <div class="card-content">
+                <ion-label>No Data</ion-label>
+              </div>
+            </div>
+          </ion-col>
+          <ion-col>
+            <div class="item-content">
+              <ion-label class="tlt">Investment Products/Platforms(total:0)</ion-label>
+              <div class="card-content">
+                <ion-label>No Data</ion-label>
+              </div>
+            </div>
+          </ion-col>
+          <ion-col>
+            <div class="item-content">
+              <ion-label class="tlt">Superannuation (total: 0)</ion-label>
+              <div class="card-content">
+                <ion-label>No Data</ion-label>
+              </div>
+            </div>
+          </ion-col>
+          <ion-col>
+            <div class="item-content">
+              <ion-label class="tlt">Pension  (total: 0)</ion-label>
+              <div class="card-content">
+                <ion-label>No Data</ion-label>
+              </div>
+            </div>
+          </ion-col>
+          <ion-col>
+            <div class="item-content">
+              <ion-label class="tlt">Annuities  (total: 0)</ion-label>
+              <div class="card-content">
+                <ion-label>No Data</ion-label>
+              </div>
+            </div>
+          </ion-col>
+          <ion-col>
+            <div class="item-content">
+              <ion-label class="tlt">Home  (total: 0)</ion-label>
+              <div class="card-content">
+                <ion-label>No Data</ion-label>
+              </div>
+            </div>
+          </ion-col>
+          <ion-col>
+            <div class="item-content">
+              <ion-label class="tlt">Investment Property  (total: 0)</ion-label>
+              <div class="card-content">
+                <ion-label>No Data</ion-label>
+              </div>
+            </div>
+          </ion-col>
+          <ion-col>
+            <div class="item-content">
+              <ion-label class="tlt">Vehicles  (total: 0)</ion-label>
+              <div class="card-content">
+                <ion-label>No Data</ion-label>
+              </div>
+            </div>
+          </ion-col>
+          <ion-col>
+            <div class="item-content">
+              <ion-label class="tlt">Other  (total: 0)</ion-label>
+              <div class="card-content">
+                <ion-label>No Data</ion-label>
+              </div>
+            </div>
+          </ion-col>
+        </ion-list>
+        <ion-list *ngSwitchCase="'lia'" lines="none">
+          <ion-label>Liabilities</ion-label>
+          <ion-col>
+            <div class="item-content">
+              <ion-label class="tlt">Home Loans (total:1)</ion-label>
+              <div class="card-content">
+                <!-- <ion-label>No Data</ion-label> -->
+                <ion-card>
+                  <ion-card-content>
+                    <ion-row>
+                      <ion-col>
+                          <div style="color: #0a86f0;">CHECKING</div>
+                          <div>xxxx3199</div>
+                      </ion-col>
+                      <ion-col>
+                          <div>FUNDS</div>
+                          <div style="color: #0a86f0;">$433,186.97</div>
+                      </ion-col>
+                      <ion-col class="i-col">
+                        <div class='icon-cont' (click)="accountDetails()"><ion-icon name="alert"></ion-icon></div>
+                      </ion-col>
+                    </ion-row>
+                    <div class="n-cont">
+                      <ion-label>ANZ</ion-label>
+                    </div>
+                  </ion-card-content>
+                </ion-card>
+              </div>
+            </div>
+          </ion-col>
+          <ion-col>
+            <div class="item-content">
+              <ion-label class="tlt">Investment Property Loans(total:1)</ion-label>
+              <div class="card-content">
+                <!-- <ion-label>No Data</ion-label> -->
+                <ion-card>
+                  <ion-card-content>
+                    <ion-row>
+                      <ion-col>
+                          <div style="color: #0a86f0;">CHECKING</div>
+                          <div>xxxx8294</div>
+                      </ion-col>
+                      <ion-col>
+                          <div>FUNDS</div>
+                          <div style="color: #0a86f0;">$33,940.06</div>
+                      </ion-col>
+                      <ion-col class="i-col">
+                        <div class='icon-cont' (click)="accountDetails()"><ion-icon name="alert"></ion-icon></div>
+                      </ion-col>
+                    </ion-row>
+                    <div class="n-cont">
+                      <ion-label>ANZ</ion-label>
+                    </div>
+                  </ion-card-content>
+                </ion-card>
+              </div>
+            </div>
+            
+          </ion-col>
+          <ion-col>
+            <div class="item-content">
+              <ion-label class="tlt">Personal Loans (total:1)</ion-label>
+              <div class="card-content">
+                <ion-label [hidden]="noContent">No Data</ion-label>
+                <ion-card [hidden]="!noContent">
+                  <ion-card-content>
+                    <ion-row>
+                      <ion-col>
+                          <div style="color: #0a86f0;">CHECKING</div>
+                          <div>xxxx3199</div>
+                      </ion-col>
+                      <ion-col>
+                          <div>FUNDS</div>
+                          <div style="color: #0a86f0;">$433,186.97</div>
+                      </ion-col>
+                      <ion-col class="i-col">
+                        <div class='icon-cont' (click)="accountDetails()"><ion-icon name="alert"></ion-icon></div>
+                      </ion-col>
+                    </ion-row>
+                    <div class="n-cont">
+                      <ion-label>ANZ</ion-label>
+                    </div>
+                  </ion-card-content>
+                </ion-card>
+              </div>
+            </div>
+          </ion-col>
+          <ion-col>
+            <div class="item-content">
+              <ion-label class="tlt">Credit Cards (total:1)</ion-label>
+              <div class="card-content">
+                <ion-label [hidden]="noContent">No Data</ion-label>
+                <ion-card [hidden]="!noContent">
+                  <ion-card-content>
+                    <ion-row>
+                      <ion-col>
+                          <div style="color: #0a86f0;">CHECKING</div>
+                          <div>xxxx3199</div>
+                      </ion-col>
+                      <ion-col>
+                          <div>FUNDS</div>
+                          <div style="color: #0a86f0;">$433,186.97</div>
+                      </ion-col>
+                      <ion-col class="i-col">
+                        <div class='icon-cont' (click)="accountDetails()"><ion-icon name="alert"></ion-icon></div>
+                      </ion-col>
+                    </ion-row>
+                    <div class="n-cont">
+                      <ion-label>ANZ</ion-label>
+                    </div>
+                  </ion-card-content>
+                </ion-card>
+              </div>
+            </div>
+          </ion-col>
+          <ion-col>
+            <div class="item-content">
+              <ion-label class="tlt">Overdraft Loans (total:1)</ion-label>
+              <div class="card-content">
+                <ion-label [hidden]="noContent">No Data</ion-label>
+                <ion-card [hidden]="!noContent">
+                  <ion-card-content>
+                    <ion-row>
+                      <ion-col>
+                          <div style="color: #0a86f0;">CHECKING</div>
+                          <div>xxxx3199</div>
+                      </ion-col>
+                      <ion-col>
+                          <div>FUNDS</div>
+                          <div style="color: #0a86f0;">$433,186.97</div>
+                      </ion-col>
+                      <ion-col class="i-col">
+                        <div class='icon-cont' (click)="accountDetails()"><ion-icon name="alert"></ion-icon></div>
+                      </ion-col>
+                    </ion-row>
+                    <div class="n-cont">
+                      <ion-label>ANZ</ion-label>
+                    </div>
+                  </ion-card-content>
+                </ion-card>
+              </div>
+            </div>
+          </ion-col>
+          <ion-col>
+            <div class="item-content">
+              <ion-label class="tlt">Margin Lending(total:1)</ion-label>
+              <div class="card-content">
+                <ion-label [hidden]="noContent">No Data</ion-label>
+                <ion-card [hidden]="!noContent">
+                  <ion-card-content>
+                    <ion-row>
+                      <ion-col>
+                          <div style="color: #0a86f0;">CHECKING</div>
+                          <div>xxxx3199</div>
+                      </ion-col>
+                      <ion-col>
+                          <div>FUNDS</div>
+                          <div style="color: #0a86f0;">$433,186.97</div>
+                      </ion-col>
+                      <ion-col class="i-col">
+                        <div class='icon-cont' (click)="accountDetails()"><ion-icon name="alert"></ion-icon></div>
+                      </ion-col>
+                    </ion-row>
+                    <div class="n-cont">
+                      <ion-label>ANZ</ion-label>
+                    </div>
+                  </ion-card-content>
+                </ion-card>
+              </div>
+            </div>
+          </ion-col>
+          <ion-col>
+            <div class="item-content">
+              <ion-label class="tlt">Line of Credit (total:1)</ion-label>
+              <div class="card-content">
+                <ion-label [hidden]="noContent">No Data</ion-label>
+                <ion-card [hidden]="!noContent">
+                  <ion-card-content>
+                    <ion-row>
+                      <ion-col>
+                          <div style="color: #0a86f0;">CHECKING</div>
+                          <div>xxxx3199</div>
+                      </ion-col>
+                      <ion-col>
+                          <div>FUNDS</div>
+                          <div style="color: #0a86f0;">$433,186.97</div>
+                      </ion-col>
+                      <ion-col class="i-col">
+                        <div class='icon-cont' (click)="accountDetails()"><ion-icon name="alert"></ion-icon></div>
+                      </ion-col>
+                    </ion-row>
+                    <div class="n-cont">
+                      <ion-label>ANZ</ion-label>
+                    </div>
+                  </ion-card-content>
+                </ion-card>
+              </div>
+            </div>
+          </ion-col>
+          <ion-col>
+            <div class="item-content">
+              <ion-label class="tlt">Asset Financing (total:1)</ion-label>
+              <div class="card-content">
+                <ion-label [hidden]="noContent">No Data</ion-label>
+                <ion-card [hidden]="!noContent">
+                  <ion-card-content>
+                    <ion-row>
+                      <ion-col>
+                          <div style="color: #0a86f0;">CHECKING</div>
+                          <div>xxxx3199</div>
+                      </ion-col>
+                      <ion-col>
+                          <div>FUNDS</div>
+                          <div style="color: #0a86f0;">$433,186.97</div>
+                      </ion-col>
+                      <ion-col class="i-col">
+                        <div class='icon-cont' (click)="accountDetails()"><ion-icon name="alert"></ion-icon></div>
+                      </ion-col>
+                    </ion-row>
+                    <div class="n-cont">
+                      <ion-label>ANZ</ion-label>
+                    </div>
+                  </ion-card-content>
+                </ion-card>
+              </div>
+            </div>
+          </ion-col>
+          <ion-col>
+            <div class="item-content">
+              <ion-label class="tlt">Buy now/pay later(total:1)</ion-label>
+              <div class="card-content">
+                <ion-label [hidden]="noContent">No Data</ion-label>
+                <ion-card [hidden]="!noContent">
+                  <ion-card-content>
+                    <ion-row>
+                      <ion-col>
+                          <div style="color: #0a86f0;">CHECKING</div>
+                          <div>xxxx3199</div>
+                      </ion-col>
+                      <ion-col>
+                          <div>FUNDS</div>
+                          <div style="color: #0a86f0;">$433,186.97</div>
+                      </ion-col>
+                      <ion-col class="i-col">
+                        <div class='icon-cont' (click)="accountDetails()"><ion-icon name="alert"></ion-icon></div>
+                      </ion-col>
+                    </ion-row>
+                    <div class="n-cont">
+                      <ion-label>ANZ</ion-label>
+                    </div>
+                  </ion-card-content>
+                </ion-card>
+              </div>
+            </div>
+          </ion-col>
+          <ion-col>
+            <div class="item-content">
+              <ion-label class="tlt">Other (total:1)</ion-label>
+              <div class="card-content">
+                <ion-label [hidden]="noContent">No Data</ion-label>
+                <ion-card [hidden]="!noContent">
+                  <ion-card-content>
+                    <ion-row>
+                      <ion-col>
+                          <div style="color: #0a86f0;">CHECKING</div>
+                          <div>xxxx3199</div>
+                      </ion-col>
+                      <ion-col>
+                          <div>FUNDS</div>
+                          <div style="color: #0a86f0;">$433,186.97</div>
+                      </ion-col>
+                      <ion-col class="i-col">
+                        <div class='icon-cont' (click)="accountDetails()"><ion-icon name="alert"></ion-icon></div>
+                      </ion-col>
+                    </ion-row>
+                    <div class="n-cont">
+                      <ion-label>ANZ</ion-label>
+                    </div>
+                  </ion-card-content>
+                </ion-card>
+              </div>
+            </div>
+          </ion-col>
+        </ion-list>
+        <ion-list *ngSwitchCase="'insurance'" lines="none">
+          <ion-label>Insurance> Life Insurance</ion-label>
+          <ion-col>
+            <div class="item-content">
+              <ion-label class="tlt">Life Cover - Super (total:1)</ion-label>
+              <div class="card-content">
+                <!-- <ion-label>No Data</ion-label> -->
+                <ion-card>
+                  <ion-card-content>
+                    <ion-row>
+                      <ion-col>
+                          <div style="color: #0a86f0;">NEOS</div>
+                          <div style="color: #0a86f0;">Life</div>
+                      </ion-col>
+                      <ion-col>
+                          <div>Coverage Level</div>
+                          <div style="color: #0a86f0;">$1000,000.00</div>
+                      </ion-col>
+                      <ion-col class="im-col">
+                        <div class='icon-cont'>
+                          <ion-icon name="alert" (click) = "accountDetails()"></ion-icon>
+                        </div>
+                        <ion-icon name="trash" (click) = "deletLife()" style="color: red; margin-left: 10px;"></ion-icon>
+                      </ion-col>
+                    </ion-row>
+                    <div class="n-cont">
+                      <ion-label>Manually Added Account</ion-label>
+                    </div>
+                  </ion-card-content>
+                </ion-card>
+              </div>
+            </div>
+          </ion-col>
+          <ion-col>
+            <div class="item-content">
+              <ion-label class="tlt">TPD Cover - Super(total:0)</ion-label>
+              <div class="card-content">
+                <ion-label [hidden]="showData">No Data</ion-label>
+                <ion-card [hidden]="showData">
+                  <ion-card-content>
+                    <ion-row>
+                      <ion-col>
+                          <div style="color: #0a86f0;">CHECKING</div>
+                          <div>xxxx8294</div>
+                      </ion-col>
+                      <ion-col>
+                          <div>FUNDS</div>
+                          <div style="color: #0a86f0;">$33,940.06</div>
+                      </ion-col>
+                      <ion-col class="i-col">
+                        <div class='icon-cont' (click)="accountDetails()"><ion-icon name="alert"></ion-icon></div>
+                      </ion-col>
+                    </ion-row>
+                    <div class="n-cont">
+                      <ion-label>ANZ</ion-label>
+                    </div>
+                  </ion-card-content>
+                </ion-card>
+              </div>
+            </div>
+            
+          </ion-col>
+          <ion-col>
+            <div class="item-content">
+              <ion-label class="tlt">Income Protection - Super(total:0)</ion-label>
+              <div class="card-content">
+                <ion-label [hidden]="showData">No Data</ion-label>
+               <ion-card [hidden]="!showData">
+                  <ion-card-content>
+                    <ion-row>
+                      <ion-col>
+                          <div style="color: #0a86f0;">CHECKING</div>
+                          <div>xxxx8294</div>
+                      </ion-col>
+                      <ion-col>
+                          <div>FUNDS</div>
+                          <div style="color: #0a86f0;">$33,940.06</div>
+                      </ion-col>
+                      <ion-col class="i-col">
+                        <div class='icon-cont' (click)="accountDetails()"><ion-icon name="alert"></ion-icon></div>
+                      </ion-col>
+                    </ion-row>
+                    <div class="n-cont">
+                      <ion-label>ANZ</ion-label>
+                    </div>
+                  </ion-card-content>
+                </ion-card>
+              </div>
+            </div>
+            
+          </ion-col>
+          <ion-col>
+            <div class="item-content">
+              <ion-label class="tlt">Life Cover - Non Super (total:0)</ion-label>
+              <div class="card-content">
+                <ion-label [hidden]="showData">No Data</ion-label>
+                <ion-card [hidden]="showData">
+                  <ion-card-content>
+                    <ion-row>
+                      <ion-col>
+                          <div style="color: #0a86f0;">NEOS</div>
+                          <div style="color: #0a86f0;">Life</div>
+                      </ion-col>
+                      <ion-col>
+                          <div>Coverage Level</div>
+                          <div style="color: #0a86f0;">$1000,000.00</div>
+                      </ion-col>
+                      <ion-col class="im-col">
+                        <div class='icon-cont'>
+                          <ion-icon name="alert" (click) = "accountDetails()"></ion-icon>
+                        </div>
+                        <ion-icon name="trash" (click) = "deletLife()" style="color: red; margin-left: 10px;"></ion-icon>
+                      </ion-col>
+                    </ion-row>
+                    <div class="n-cont">
+                      <ion-label>Manually Added Account</ion-label>
+                    </div>
+                  </ion-card-content>
+                </ion-card>
+              </div>
+            </div>
+          </ion-col>
+          <ion-col>
+            <div class="item-content">
+              <ion-label class="tlt">TPD Cover - Non Super(total:0)</ion-label>
+              <div class="card-content">
+                <ion-label [hidden]="showData">No Data</ion-label>
+                <ion-card [hidden]="!showData">
+                  <ion-card-content>
+                    <ion-row>
+                      <ion-col>
+                          <div style="color: #0a86f0;">CHECKING</div>
+                          <div>xxxx8294</div>
+                      </ion-col>
+                      <ion-col>
+                          <div>FUNDS</div>
+                          <div style="color: #0a86f0;">$33,940.06</div>
+                      </ion-col>
+                      <ion-col class="i-col">
+                        <div class='icon-cont' (click)="accountDetails()"><ion-icon name="alert"></ion-icon></div>
+                      </ion-col>
+                    </ion-row>
+                    <div class="n-cont">
+                      <ion-label>ANZ</ion-label>
+                    </div>
+                  </ion-card-content>
+                </ion-card>
+              </div>
+            </div>
+            
+          </ion-col>
+          <ion-col>
+            <div class="item-content">
+              <ion-label class="tlt">Trauma Cover - Super(total:0)</ion-label>
+              <div class="card-content">
+                <ion-label [hidden]="showData">No Data</ion-label>
+                <ion-card [hidden]="!showData">
+                  <ion-card-content>
+                    <ion-row>
+                      <ion-col>
+                          <div style="color: #0a86f0;">TAL</div>
+                          <!-- <div>xxxx8294</div> -->
+                      </ion-col>
+                      <ion-col>
+                          <div>Coverage Level</div>
+                          <div style="color: #0a86f0;">$350,000.00</div>
+                      </ion-col>
+                      <ion-col class="im-col">
+                        <div class='icon-cont'>
+                          <ion-icon name="alert" (click) = "accountDetails()"></ion-icon>
+                        </div>
+                        <ion-icon name="trash" (click) = "deletLife()" style="color: red; margin-left: 10px;"></ion-icon>
+                      </ion-col>
+                    </ion-row>
+                    <div class="n-cont">
+                      <ion-label>Manually Added Account</ion-label>
+                    </div>
+                  </ion-card-content>
+                </ion-card>
+              </div>
+            </div>
+            
+          </ion-col>
+          <ion-col>
+            <div class="item-content">
+              <ion-label class="tlt">Income Protection - Non Super (total:0)</ion-label>
+              <div class="card-content">
+                <ion-label>No Data</ion-label>
+              </div>
+            </div>
+          </ion-col>
+          <ion-col>
+            <div class="item-content">
+              <ion-label class="tlt">Business Expenses - Non Super(total:0)</ion-label>
+              <div class="card-content">
+                <ion-label>No Data</ion-label>
+                <ion-card>
+                  <ion-card-content>
+                    <ion-row>
+                      <ion-col>
+                          <div style="color: #0a86f0;">CHECKING</div>
+                          <div>xxxx8294</div>
+                      </ion-col>
+                      <ion-col>
+                          <div>FUNDS</div>
+                          <div style="color: #0a86f0;">$33,940.06</div>
+                      </ion-col>
+                      <ion-col class="i-col">
+                        <div class='icon-cont' (click)="accountDetails()"><ion-icon name="alert"></ion-icon></div>
+                      </ion-col>
+                    </ion-row>
+                    <div class="n-cont">
+                      <ion-label>ANZ</ion-label>
+                    </div>
+                  </ion-card-content>
+                </ion-card>
+              </div>
+            </div>
+            
+          </ion-col>
+          
+        </ion-list>
+      </div>
+    </div>
+  </div>
+</ion-content>

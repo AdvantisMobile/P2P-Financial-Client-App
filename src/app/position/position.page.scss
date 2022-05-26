@@ -1,0 +1,38 @@
+ion-content{
+    --background: #c8ddee;
+}
+.page-centered-element {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .content{
+        text-align: center;
+    }
+}
+ion-button{
+    width: 80%;
+    border-radius: 5px;
+    --background: transparent;
+    border: 1px solid rgb(10, 134, 240);;
+    --color:rgb(10, 134, 240);
+    font-size: 0.75rem;
+    margin-top: 10px;
+    height: 40px;
+    div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        font-size: 15px;
+        p{
+            margin: 0px;
+            margin-right: 10px;
+        }
+    
+    }
+}

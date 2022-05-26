@@ -1,0 +1,35 @@
+.confirm-modal {  // Modal cssClass class name
+    ion-backdrop {
+      --backdrop-opacity: 0;
+    }
+}
+.confirm-modal .modal-wrapper{
+    --border-radius: 20px;
+    --max-height: 50%;
+    --max-width: 80%;
+    --width: 80%;
+    --height: 50%;
+    top: 25%;
+    margin-left: 38px;
+}
+.app-logo{
+  background-image: url(https://www.freakyjolly.com/wp-content/uploads/2020/04/fj-logo-1.png);
+  height: 150px;
+  width: 150px;
+  background-repeat: no-repeat;
+  border-radius: 320px;
+  background-position: center;
+  background-size: contain;
+  background-color: #e3f8ff;
+  margin: 30px auto;
+}
+ 
+ion-item{
+  border: 1px solid rgb(10, 134, 240);
+    margin: 50px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    --padding-end: 0px;
+    color: blue;
+}

@@ -1,0 +1,7 @@
+{
+  "name": "P2PClient",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
